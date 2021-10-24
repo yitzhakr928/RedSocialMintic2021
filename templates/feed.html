@@ -8,7 +8,7 @@
         <meta name="author" content="" />
         <title>Dashboard - SB Admin</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="{{ url_for('static', filename='css/styles.css') }}"rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
@@ -43,17 +43,17 @@
                 <main>
                     <div class ="rows">
                         <div class="column">
-                            <img alt="1" src="images/img1.jpg"/>
+                            <img alt="1" src="{{ url_for('static', filename='images/img1.jpg')}}"/>
                             <div class="item-text"><h6>@User1 - "Castillo" </h6>
                             <p><i class="fab fa-gratipay"></i> <i class="fas fa-at"></i>  <i class="fas fa-share-square"></i></p>
                             <p><i class="fas fa-pen-square"></i></p>
                             </div>
-                            <img alt="2" src="images/img2.jpg"/>
+                            <img alt="2" src="{{ url_for('static', filename='images/img2.jpg')}}"/>
                             <div class="item-text"><h6>@User2 - "Hombre" </h6>
                                 <p><i class="fab fa-gratipay"></i> <i class="fas fa-at"></i>  <i class="fas fa-share-square"></i></p>
                                 <p><i class="fas fa-pen-square"></i></p>
                                 </div>
-                            <img alt="3" src="images/img3.jpg"/>
+                            <img alt="3" src="{{ url_for('static', filename='images/img3.jpg')}}"/>
                             <div class="item-text"><h6>@User3 - "Playa"  </h6>
                                 <p><i class="fab fa-gratipay"></i> <i class="fas fa-at"></i>  <i class="fas fa-share-square"></i></p>
                                 <p><i class="fas fa-pen-square"></i></p>
@@ -61,17 +61,17 @@
                         </div>
 
                         <div class="column">
-                            <img alt="4" src="images/img4.jpg"/>
+                            <img alt="4" src="{{ url_for('static', filename='images/img4.jpg')}}"/>
                             <div class="item-text"><h6>@User4 - "Barco"  </h6>
                                 <p><i class="fab fa-gratipay"></i> <i class="fas fa-at"></i>  <i class="fas fa-share-square"></i></p>
                                 <p><i class="fas fa-pen-square"></i></p>
                                 </div>
-                            <img alt="5" src="images/img5.jpg"/>
+                            <img alt="5" src="{{ url_for('static', filename='images/img5.jpg')}}"/>
                             <div class="item-text"><h6>@User5 - "Pareja" </h6>
                                 <p><i class="fab fa-gratipay"></i> <i class="fas fa-at"></i>  <i class="fas fa-share-square"></i></p>
                                 <p><i class="fas fa-pen-square"></i></p>
                                 </div>
-                            <img alt="6" src="images/img6.jpg"/>
+                            <img alt="6" src="{{ url_for('static', filename='images/img6.jpg')}}"/>
                             <div class="item-text"><h6>@User6 - "Hombre agachado"  </h6>
                                 <p><i class="fab fa-gratipay"></i> <i class="fas fa-at"></i>  <i class="fas fa-share-square"></i></p>
                                 <p><i class="fas fa-pen-square"></i></p>
@@ -79,17 +79,17 @@
                         </div>
 
                         <div class="column">
-                            <img alt="7" src="images/img7.jpg"/>
+                            <img alt="7" src="{{ url_for('static', filename='images/img7.jpg')}}"/>
                             <div class="item-text"><h6>@User7 - "Iglesia"  </h6>
                                 <p><i class="fab fa-gratipay"></i> <i class="fas fa-at"></i>  <i class="fas fa-share-square"></i></p>
                                 <p><i class="fas fa-pen-square"></i></p>
                                 </div>
-                            <img alt="8" src="images/img8.jpg"/>
+                            <img alt="8" src="{{ url_for('static', filename='images/img8.jpg')}}"/>
                             <div class="item-text"><h6>@User8 - "Mujer Sentada"  </h6>
                                 <p><i class="fab fa-gratipay"></i> <i class="fas fa-at"></i>  <i class="fas fa-share-square"></i></p>
                                 <p><i class="fas fa-pen-square"></i></p>
                                 </div>
-                            <img alt="9" src="images/img9.jpg"/>
+                            <img alt="9" src="{{ url_for('static', filename='images/img9.jpg')}}"/>
                             <div class="item-text"><h6>@User9 - "Redes Sociales"  </h6>
                                 <p><i class="fab fa-gratipay"></i> <i class="fas fa-at"></i>  <i class="fas fa-share-square"></i></p>
                                 <p><i class="fas fa-pen-square"></i></p>
@@ -110,25 +110,25 @@
                             <br>
                             <div class="sak"><i class="fas fa-user"></i> usuariosugerido6</div>
                             <br>
-                            <div><h6>Sugerenias de Usuarios</h6></div>
+                            <div><h6>Sugerenias de Imagenes</h6></div>
                             <div class ="rows">
                                 <div class="column">
-                                    <img alt="1" src="images/img10.jpg"/>
-                                    <img alt="2" src="images/img11.jpg"/>
-                                    <img alt="3" src="images/img12.jpg"/>                                   
+                                    <img alt="1" src="{{ url_for('static', filename='images/img10.jpg')}}"/>
+                                    <img alt="2" src="{{ url_for('static', filename='images/img11.jpg')}}"/>
+                                    <img alt="3" src="{{ url_for('static', filename='images/img12.jpg')}}"/>                                   
                                 </div>
         
                                 <div class="column">
-                                    <img alt="4" src="images/img13.jpg"/>
-                                    <img alt="5" src="images/img14.jpg"/>
-                                    <img alt="6" src="images/img15.jpg"/>
+                                    <img alt="4" src="{{ url_for('static', filename='images/img13.jpg')}}"/>
+                                    <img alt="5" src="{{ url_for('static', filename='images/img14.jpg')}}"/>
+                                    <img alt="6" src="{{ url_for('static', filename='images/img15.jpg')}}"/>
                                     
                                 </div>
         
                                 <div class="column">
-                                    <img alt="7" src="images/img16.jpg"/>
-                                    <img alt="8" src="images/img17.jpg"/>
-                                    <img alt="9" src="images/img19.jpg"/>
+                                    <img alt="7" src="{{ url_for('static', filename='images/img16.jpg')}}"/>
+                                    <img alt="8" src="{{ url_for('static', filename='images/img17.jpg')}}"/>
+                                    <img alt="9" src="{{ url_for('static', filename='images/img19.jpg')}}"/>
                                    
                                 </div>
                         </div>                      
